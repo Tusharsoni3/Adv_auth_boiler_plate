@@ -1,7 +1,7 @@
-require('dotenv').config();
-const { defineConfig } = require('drizzle-kit');
+import 'dotenv/config';
+import { defineConfig } from 'drizzle-kit';
 
-module.exports = defineConfig({
+export default defineConfig({
   out: './drizzle',
   schema: './src/db/schema.js',
   dialect: 'postgresql',
